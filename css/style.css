@@ -1,0 +1,206 @@
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Cinzel:wght@400..900&family=Climate+Crisis&family=DM+Serif+Display:ital@0;1&family=Dorsa&family=Freeman&family=Honk&family=Inter:wght@700&family=Lilita+One&family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&family=Ojuju:wght@600&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Press+Start+2P&family=Radio+Canada+Big:wght@400..700&family=Rammetto+One&family=Rationale&family=Shojumaru&family=Teko:wght@700&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display:ital,wght@0,800;1,800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display:ital,wght@0,500;1,500&display=swap');
+.row{
+    margin-top: 25vh;
+}
+
+body{
+    ::selection {
+        color: rgb(0, 204, 255);
+        background: transparent;
+      }
+}
+
+.masonry-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 35px;
+    margin-top: -15vh;
+}
+.box {
+    background-color: orangered;
+    width: 80%;
+    height: 75%;
+    margin-top: 9vh;
+    text-align: center;
+    color: white;
+}
+.box svg {
+    width: 50px;
+    height: 50px; 
+    fill: white; 
+    margin-left: -14vh;
+    margin-top: 5vh;
+}
+.box h3 {
+    margin-top: 3vh;
+    font-size: 2rem;
+    font-weight: 700;
+    margin-bottom: -13px;
+    margin-left: -12vh;
+}
+.box p {
+    font-size: 14px;
+    margin-left: -6vh;
+    margin-top: 15px;
+}
+.masonry-grid .item img {
+    width: 100%;
+    height: 270px;
+    object-fit: cover;
+}
+img.img-fluid.img2 {
+    height: 170px;
+    width: 170px;
+    margin-left: 6vh;
+}
+
+@media (min-width: 767px) and (max-width: 992px) {
+    .masonry-grid { 
+        grid-template-columns: repeat(2, 1fr);
+        gap: 15px;
+        margin-top: 0vh; 
+    }
+    
+    .masonry-grid .item {
+        position: relative;
+        overflow: hidden;
+    }
+    img.img-fluid.img2 {
+
+        margin-left: 0vh;
+    }
+    .masonry-grid .item img {
+        display: block;
+        width: 100%;
+        height: auto;
+        object-fit: cover;
+    }
+    
+    .box {
+        width: 90%; 
+        margin-top: 5vh; 
+        margin-bottom: 5vh; 
+    }
+    
+    .box svg {
+        width: 40px;
+        height: 40px; 
+        margin-left: -11vh;
+        margin-top: 3vh; 
+    }
+    
+    .box h3 {
+        font-size: 20px; 
+        margin-left: -10vh; 
+    }
+    
+    .box p {
+        font-size: 12px;
+        margin-left: -3vh; 
+    }
+}
+
+
+
+
+.faq{
+    margin-top: -1vh;
+}
+#accordion{
+    
+margin-top: 4vh;
+}
+.faq-line {
+    position: relative;
+    display: inline-block;
+    padding-left: 15px; 
+    color: #aaa; 
+    font-family: "Red Hat Display", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 500;
+  font-style: normal;
+
+    
+}
+
+.faq-line::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    width: 3px;
+    background-color: #ff4500;
+
+}
+
+.faq .card {
+    border: none;
+    margin-bottom: 1rem;
+    box-shadow: 0px 0px 29px 0px rgb(219 219 219 / 75%);
+}
+.faq .card-header {
+    padding: 0.75rem 1.25rem;
+    border-left: 2px solid #ff9873;
+    cursor: pointer;
+    background: #fff;
+    color: #000;
+    transition: border-color 0.3s ease-in-out;
+    font-family: "Red Hat Display", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 500;
+  font-style: normal;
+}
+.faq .card-header.active {
+    border-left: 2px solid #ff4500; 
+    border-bottom: none;
+}
+.faq .card-header::after {
+    content: '+';
+    color: #ff4500;
+    float: right;
+    transition: transform 0.3s ease-in-out;
+}
+.faq .card-header.active::after {
+    content: '-';
+    color: #ff4500;
+    transform: rotate(180deg);
+}
+.faq .collapse {
+    border-left: 2px solid #ff4500; 
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.5s ease-out, padding 0.5s ease-out;
+}
+
+.faq .collapse.show {
+    max-height: 500px;
+    
+}
+
+.faq .card-body {
+    padding: 1rem;
+    background: #ffffff;
+    color: grey;
+}
+
+
+.photo{
+    background-color: #ffa500;
+    margin-top: 4vh;
+    margin-right: 1vh;
+    height: 50vh;
+}
+h2{
+    font-family: "Red Hat Display", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 800;
+    font-style: normal;
+}
+svg {
+    fill: orange;
+    height: 30vh;
+    width: 30vh;
+}
